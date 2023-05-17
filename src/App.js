@@ -23,8 +23,8 @@ function App() {
   };
 
   useEffect(()=>{
-    let savedTodo=JSON.parse(sessionStorage.getItem('todo-list'))
-    let savedCompletedTodo=JSON.parse(sessionStorage.getItem('completedTodos'))
+    let savedTodo=JSON.parse(localStorage.getItem('todo-list'))
+    let savedCompletedTodo=JSON.parse(localStorage.getItem('completedTodos'))
     if(savedTodo){
       setTodos(savedTodo)
     }
