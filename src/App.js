@@ -19,12 +19,12 @@ function App() {
     let UpdatedTodo = [...Todos];
     UpdatedTodo.push(newTodoItem);
     setTodos(UpdatedTodo);
-    localStorage.setItem('todo-list',JSON.stringify(UpdatedTodo))
+    sessionStorage.setItem('todo-list',JSON.stringify(UpdatedTodo))
   };
 
   useEffect(()=>{
-    let savedTodo=JSON.parse(localStorage.getItem('todo-list'))
-    let savedCompletedTodo=JSON.parse(localStorage.getItem('completedTodo'))
+    let savedTodo=JSON.parse(sessionStorage.getItem('todo-list'))
+    let savedCompletedTodo=JSON.parse(sessionStorage.getItem('completedTodos'))
     if(savedTodo){
       setTodos(savedTodo)
     }
@@ -36,7 +36,7 @@ function App() {
   const handleDelete=(index)=>{
     let reducedTodo=[...Todos];
     reducedTodo.splice(index);
-    localStorage.setItem('todo-list',JSON.stringify(reducedTodo));
+    sessionStorage.setItem('todo-list',JSON.stringify(reducedTodo));
     setTodos(reducedTodo)
   }
 
@@ -57,14 +57,14 @@ function App() {
     let updatedCompletedTodo=[...completedTodos];
     updatedCompletedTodo.push(filteredItem)
     setCompletedTodos(updatedCompletedTodo)
-    localStorage.setItem('completedTodos',JSON.stringify(updatedCompletedTodo));
+    sessionStorage.setItem('completedTodos',JSON.stringify(updatedCompletedTodo));
     handleDelete(index)
   }
 
   const handleDeleteCompletedTodo=(index)=>{
     let reducedTodo=[...completedTodos];
     reducedTodo.splice(index);
-    localStorage.setItem('completedTodos',JSON.stringify(reducedTodo));
+    sessionStorage.setItem('completedTodos',JSON.stringify(reducedTodo));
     setCompletedTodos(reducedTodo)
   }
 
