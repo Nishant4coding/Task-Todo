@@ -70,7 +70,7 @@ function App() {
 
   return (
      <div>
-      <h1>My todo</h1>
+      <h1>Task To-Do</h1>
       <div className="wrapper">
         <div className="input">
           <div className="input-item">

@@ -136,6 +136,7 @@ h1{
     margin-top: 20px;
     margin: 15px;
     align-items: center;
+    font-size: 20px;
   }
   .button-area{
     display:flex;
@@ -148,6 +149,7 @@ h1{
     height: 50px;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 10px;
   }
   .sec-button{
     width: 100px;
@@ -155,6 +157,12 @@ h1{
     height: 50px;
     margin-top: 10px;
     font-size: 15px;
+  }
+  input{
+    height: 20px;
+  }
+  .icon{
+    font-size: 25px;
   }
 
 }
