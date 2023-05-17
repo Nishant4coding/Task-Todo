@@ -146,10 +146,15 @@ h1{
   .add-button{
     width: 90px;
     height: 50px;
+    font-size: 15px;
+    font-weight: bold;
   }
   .sec-button{
-    width: 90px;
+    width: 100px;
+    font-weight: bold;
     height: 50px;
+    margin-top: 10px;
+    font-size: 15px;
   }
 
 }
