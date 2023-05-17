@@ -143,5 +143,13 @@ h1{
     align-items: center;
     justify-content: center;
   }
+  .add-button{
+    width: 90px;
+    height: 50px;
+  }
+  .sec-button{
+    width: 90px;
+    height: 50px;
+  }
 
 }
